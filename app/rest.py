@@ -12,7 +12,7 @@ def main():
 
 @app.route('/hello')
 def hello():
-    return 'I am good, how about you?'
+    return 'Hi!'
 
 
 @app.route('/database')
