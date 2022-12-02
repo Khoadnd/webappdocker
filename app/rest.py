@@ -27,5 +27,11 @@ def read():
     return ",".join(result)
 
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    return 'You lost? 🥺'
+
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
